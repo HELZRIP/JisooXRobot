@@ -41,14 +41,17 @@ from JisooX.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-_Hello_ *{}*
-_My name is_ *{}*\n_A Powerful Telegram ProBot to Manage Your Groups,feel free to add to your groups!!_
-_Maintained by_ [{}](tg://user?id={})
+*Hello {} !*
+────────────────────────
+✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
+✪ Maintained by [Dream Gatden (rey)](http://t.me/helzrip) ✨
+────────────────────────
+Hit the /help to see available command.
 """
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+**Main commands:**  [ㅤ](https://telegra.ph/file/db50f9ea1aa0501b2613a.jpg)
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
@@ -73,7 +76,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 ⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://t.me/helzrip)
-⚡You Can Clone Me [Here](https://t.me/helzrip)
+⚡You Can Donate In [Here](https://t.me/helzrip)
 """
 
 
