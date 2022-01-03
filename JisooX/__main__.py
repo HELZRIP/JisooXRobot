@@ -73,7 +73,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 ⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://t.me/helzrip)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://t.me/helzrip)
+⚡You Can Clone Me [Here](https://t.me/helzrip)
 """
 
 
@@ -178,7 +178,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+        update.effective_message.reply_text("Heya,{} Here..\nHow me can help you?".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
@@ -193,7 +193,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/Shinhwagyu")]]
+    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/Helzrip")]]
     keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/SS404"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
